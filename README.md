@@ -18,13 +18,47 @@ first booking destination will be. There are 12 possible outcomes of the destina
 ## 2.0. Business Assumptions
 
 For this project a few assumptions were made to solve the problem:
-- Due to the granularity desired for the prediction, the session dataset will not be consdiered.
+- Due to the granularity desired for the prediction, the session dataset will not be considered.
+- The date of first booking will be considered as known and will be kept in the training dataset. 
 - A user can choose only one country destination.
 - Users older than 100 will not be considered.
 
 ## 3.0. Solution Strategy
 
+This project was developed based on the CRISP-DS (Cross-Industry Standard Process - Data Science, a.k.a. CRISP-DM) 
+project management method, adapted to the project at hand by following these steps:
+
+- **Business Understanding:** Determine business objectives, key assumptions and project plan. 
+- **Data Understanding:** Collect initial data, describe and explore data and verify data quality.
+- **Data Preparation:** Format and clean dataset, feature engineering and selection.
+- **Modeling:** Select and build models, choose performance metrics and model assessment. 
+- **Evaluation:** Evaluate results, review process and determine next steps.
+- **Deployment:** Produce final report and review project.
+
 ## 4.0. Main Data Insights
+
+Through exploratory data analysis done on data collected in a single day, the main insights can be seen below:
+
+Through exploratory data analysis done on the data users to understand better the dataset and generate a few insights 
+show bellow:
+
+Através da analise exploratória dos dados feita sobre os dados do usuário gerou alguns insights através da validação das 
+hipoteses atra´ves da analise bivariada. Todas hipoteses e o resultado da validação pode ser visto mais detalhamente nos
+notebooks, abaixo mostramos os 3 principais insights revelados pela EDA.
+
+**H1: Across all destinations, it takes users 3 days (median) to make their first Airbnb booking since their first 
+activation.**
+
+![](Images/data_insights_01.JPG)
+
+**H5: The Google Marketing channel accounts for more than 40% of bookings to countries outside the USA.**
+
+![](Images/data_insights_05.JPG)
+
+**H7: Average age for all destinations is 40 years old.**
+
+![](Images/data_insights_07.JPG)
+
 
 ## 5.0. Machine Learning Model
 
